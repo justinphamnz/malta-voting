@@ -1,32 +1,155 @@
-.App {
-  text-align: center;
+.banner {
+  z-index: -1;
+  width: 100vw;
+  padding-left: 0 !important;
+  left: 0px !important;
+  top: 0px;
+  position: absolute;
+  height: 75vh;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#64b5f6),
+    to(#0a9cd4)
+  );
+  background-image: -webkit-linear-gradient(#64b5f6, #0a9cd4);
+  background-image: -o-linear-gradient(#64b5f6, #0a9cd4);
+  background-image: linear-gradient(#64b5f6, #0a9cd4);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.carousel-caption p {
+  font-size: 20px;
+  line-height: 1.4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.carousel-inner .item img[src$=".svg"] {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* QR code generator */
+#qrCode {
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+  /* Hide captions */
+  .carousel-caption {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+/*--- header ---*/
+.ui.secondary.pointing.menu {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+}
+
+.ui.secondary.pointing.menu.right {
+  position: absolute;
+  top: 0 !important;
+  left: 75vw;
+}
+
+header {
+  z-index: -1;
+  width: 100vw;
+  padding-left: 0 !important;
+  left: 0px !important;
+  top: 0px;
+  position: absolute;
+  height: 75vh;
+  background-image: linear-gradient(#64b5f6, #0a9cd4);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
+  /*clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw) );*/
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
+}
+
+.connection.image {
+  top: 12vh !important;
+  left: 2vw;
+  position: absolute;
+  width: 35%;
+  height: 43%;
+}
+/*--- Nominate ---*/
+.ui.header.icon.nominate {
+  margin-top: 15px;
+}
+
+.ui.form.nominate {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+.ui.segment.nominate,
+.ui.segment.vote {
+  width: 800px;
+  margin: 10em auto;
+}
+
+/*-- Vote --*/
+.blockchain.image {
+  top: 23vh !important;
+  left: 18vw;
+  position: absolute;
+  width: 15%;
+  height: 58%;
+}
+
+.vote.header {
+  margin-top: 10vh;
+  margin-left: 60vw;
+  position: absolute;
+  color: aliceblue;
+  font-weight: 400;
+}
+
+.ui.form.vote {
+  margin-left: 14vh;
+}
+
+/*-- Result --*/
+.graph.image {
+  top: 39vh !important;
+  left: 16vw;
+  position: absolute;
+  width: 18%;
+  height: 34%;
+}
+.ui.segment.result {
+  top: 15vh !important;
+  margin-left: 32vw;
+  width: 38vw;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.result {
+  margin-left: 5vw;
+}
+
+.result.header {
+  margin-top: 11vh;
+  margin-left: 60.5vw;
+  position: absolute;
+  color: aliceblue;
+  font-weight: 400;
+}
+
+.ui.progress {
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.candidate.name {
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+
+.votes.count {
+  margin-bottom: 0vh;
+  margin-top: 0vh;
 }

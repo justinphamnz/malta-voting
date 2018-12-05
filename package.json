@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-scripts": "2.0.4",
+    "semantic-ui-react": "^0.82.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +22,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-router-dom": "^4.3.1",
+    "web3": "^1.0.0-beta.36"
+  }
 }
